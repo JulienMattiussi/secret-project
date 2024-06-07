@@ -11,7 +11,14 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="Piouaaaaaaaa !!!!" />
 
       <nav>
-        <audio autoplay loop src="/piouaaaa.mp3" type="audio/mp3" />
+        <audio
+          autoplay
+          loop
+          controls
+          src="/piouaaaa.mp3"
+          type="audio/mp3"
+          style="visibility: hidden"
+        />
       </nav>
     </div>
   </header>
