@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+document.addEventListener('click', musicPlay)
+function musicPlay() {
+  document.getElementById('pioua').play()
+  document.removeEventListener('click', musicPlay)
+}
 </script>
 
 <template>
@@ -9,16 +15,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Piouaaaaaaaa !!!!" />
-
       <nav>
-        <audio
-          autoplay
-          loop
-          controls
-          src="/piouaaaa.mp3"
-          type="audio/mp3"
-          style="visibility: hidden"
-        />
+        <audio id="pioua" autoplay loop src="/piouaaaa.mp3" type="audio/mp3" />
       </nav>
     </div>
   </header>
