@@ -5,10 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/pelican.png" width="125" height="125" />
+    <img
+      id="pelican"
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/pelican.png"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
-      <HelloWorld msg="Piouaaaaaaaa !!!!" />
+      <HelloWorld msg="Piouaaaaaaaa!!!!" />
       <nav>
         <audio id="pioua" autoplay loop src="/piouaaaa.mp3" type="audio/mp3" />
       </nav>
