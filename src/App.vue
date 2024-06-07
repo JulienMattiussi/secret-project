@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-
-document.addEventListener('click', musicPlay)
-function musicPlay() {
-  document.getElementById('pioua').play()
-  document.removeEventListener('click', musicPlay)
-}
 </script>
 
 <template>
