@@ -26,7 +26,7 @@ const mediaQuery = window.matchMedia('(min-width : 480px)')
 
 <style scoped>
 @media (max-width: 1024px) {
-  nav {
+  ntav {
     padding-top: 50em;
   }
 }
