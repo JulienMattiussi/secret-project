@@ -16,9 +16,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Piouaaaaaaaa!!!!" />
-      <nav>
-        <audio id="pioua" loop controls src="/piouaaaa.mp3" type="audio/mp3" />
-      </nav>
+      <!--       <nav>
+        <audio id="pioua" loop ntrols src="/piouaaaa.mp3" type="audio/mp3" />
+      </nav> -->
     </div>
   </header>
 </template>
