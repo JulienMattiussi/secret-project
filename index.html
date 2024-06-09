@@ -12,16 +12,11 @@
     <script type="text/javascript">
       document.addEventListener('mousedown', musicPlay)
       document.addEventListener('touchstart', musicPlay)
-      document.getElementById('pelican').addEventListener('touchstart', musicPlay)
       function musicPlay() {
         document.getElementById('texte').textContent = 'piouaaa!! piouaaa!!'
-        var audio = new Audio('/piouaaaa.mp3')
-        audio.loop = true
-        audio.play()
-        //document.getElementById('pioua').play()
+        document.getElementById('pioua').play()
         document.removeEventListener('mousedown', musicPlay)
         document.removeEventListener('touchstart', musicPlay)
-        document.getElementById('pelican').removeEventListener('touchstart', musicPlay)
       }
     </script>
   </body>

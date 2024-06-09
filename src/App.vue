@@ -1,29 +1,36 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+const mediaQuery = window.matchMedia('(min-width : 480px)')
 </script>
 
 <template>
   <header>
-    <img
-      id="pelican"
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/pelican.png"
-      width="125"
-      height="125"
-    />
+    <img alt="Vue logo" class="logo" src="@/assets/pelican.png" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="Piouaaaaaaaa!!!!" />
-      <!--       <nav>
-        <audio id="pioua" loop ntrols src="/piouaaaa.mp3" type="audio/mp3" />
-      </nav> -->
+      <nav>
+        <audio
+          id="pioua"
+          loop
+          autoplay
+          :controls="!mediaQuery.matches"
+          src="/piouaaaa.mp3"
+          type="audio/mp3"
+        />
+      </nav>
     </div>
   </header>
 </template>
 
 <style scoped>
+@media (max-width: 1024px) {
+  nav {
+    padding-top: 50em;
+  }
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
