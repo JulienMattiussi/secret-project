@@ -10,12 +10,13 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
     <script type="text/javascript">
-      document.addEventListener('click', musicPlay)
+      document.addEventListener('mousedown', musicPlay)
       document.addEventListener('touchstart', musicPlay)
       document.getElementById('pelican').addEventListener('touchstart', musicPlay)
       function musicPlay() {
+        document.getElementById('texte').textContent = 'piouaaa!! piouaaa!!'
         document.getElementById('pioua').play()
-        document.removeEventListener('click', musicPlay)
+        document.removeEventListener('mousedown', musicPlay)
         document.removeEventListener('touchstart', musicPlay)
         document.getElementById('pelican').removeEventListener('touchstart', musicPlay)
       }
