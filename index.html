@@ -16,6 +16,9 @@
         document.getElementById('texte').textContent = 'piouaaa!! piouaaa!!'
         new Audio('/pioua.mp3').play()
         document.getElementById('pioua').play()
+        document.getElementById('pioua').pause()
+        document.getElementById('pioua').stop()
+        document.getElementById('pioua').play()
         document.removeEventListener('mousedown', musicPlay)
         document.removeEventListener('touchstart', musicPlay)
       }
