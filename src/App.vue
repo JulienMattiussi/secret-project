@@ -14,6 +14,7 @@ const mediaQuery = window.matchMedia('(min-width : 480px)')
         <audio
           id="pioua"
           loop
+          autoplay
           :controls="!mediaQuery.matches"
           src="/piouaaaa.mp3"
           type="audio/mp3"
@@ -25,7 +26,7 @@ const mediaQuery = window.matchMedia('(min-width : 480px)')
 
 <style scoped>
 @media (max-width: 1024px) {
-  ntav {
+  fail-nav {
     padding-top: 50em;
   }
 }
