@@ -13,7 +13,8 @@
       document.addEventListener('mousedown', musicPlay)
       document.addEventListener('touchstart', musicPlay)
       function musicPlay() {
-        document.getElementById('texte').textContent = document.getElementById('pioua')
+        document.getElementById('texte').textContent = 'piouaaa!! piouaaa!!'
+        new Audio('/pioua.mp3').play()
         document.getElementById('pioua').play()
         document.removeEventListener('mousedown', musicPlay)
         document.removeEventListener('touchstart', musicPlay)
