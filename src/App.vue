@@ -16,7 +16,7 @@ const mediaQuery = window.matchMedia('(min-width : 480px)')
           loop
           autoplay
           :controls="!mediaQuery.matches"
-          src="/piouaaaa.mp3"
+          src="/piouaaaa_v2.mp3"
           type="audio/mp3"
         />
       </nav>
